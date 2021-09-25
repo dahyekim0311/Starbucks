@@ -1,19 +1,3 @@
-const searcEl = document.querySelector('.search');
-const searchInputEl = searcEl.querySelector('input')
-
-searcEl.addEventListener('click',function(){
-  searchInputEl.focus();
-});
-
-searchInputEl.addEventListener('focus',function(){
-  searcEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder','통합검색');
-});
-
-searchInputEl.addEventListener('blur',function(){
-  searcEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder','');
-})
 
 // 페이지 스크롤에 영향을 받는 요소들을 검색!
 const badgeEl = document.querySelector('header .badges')
@@ -134,6 +118,3 @@ spyEls.forEach(function (spyEl) {
 })
 
 
-
-const thisYear = document.querySelector('.this-year')
-thisYear.textContent = new Date().getFullYear()
